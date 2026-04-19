@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #f8f9fa 0%,
+    #e0f0ff 100%
+  ); /* Light blue-ish */
+  /* Or for neutral: linear-gradient(135deg, #f4f4f4 0%, #e8e8e8 100%); */
+  min-height: 100vh;
+  background-attachment: fixed; /* Nice parallax feel */
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+  padding: 100px 0;
+  background-color: #ffffff; /* ← This is the hero background */
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  gap: 80px;
+}
+
+/* Text Side */
+.text-side {
+  flex: 1;
+}
+
+.text-side h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.welcome {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skills {
+  display: flex;
+  gap: 60px;
+  margin: 25px 0 35px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* Circle Image */
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  border: 10px solid #ffffff;
+}
+
+/* Button */
+.btn-resume {
+  background-color: red;
+  color: red;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-resume:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .circle-img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* Social Icons Styling */
+.social-icons a {
+  color: #555;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e74c3c;
+  transform: translateY(-4px);
+}
+
+.social-icons .fa-2x {
+  font-size: 1.8rem;
+}
+
+/* For navbar icons */
+.navbar .nav-link i {
+  font-size: 1.3rem;
+}
+.game {
+  text-align: center;
+  padding-top: 100px;
+}
